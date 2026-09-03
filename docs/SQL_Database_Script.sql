@@ -76,7 +76,7 @@ CREATE TABLE Enrolments (
 CREATE TABLE Results (
     ResultId INT IDENTITY(1,1) NOT NULL PRIMARY KEY,
     EnrolmentId INT NOT NULL UNIQUE,
-    FinishTime TIME NULL,
+    FinishTime TIME NULL,--null means no value
     Position INT NULL,
     Notes NVARCHAR(255) NULL,
     FOREIGN KEY (EnrolmentId) REFERENCES Enrolments(EnrolmentId) ON DELETE CASCADE
