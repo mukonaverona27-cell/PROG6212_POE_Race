@@ -1,6 +1,7 @@
 CREATE DATABASE RaceDayDb;
 use RaceDayDb;
 --stores all system user--
+--role of user table is organiser creates events participant joins--                           
 CREATE TABLE Users (--this is user table--
     UserId INT IDENTITY(1,1) NOT NULL,
     Email NVARCHAR(100) NOT NULL,
