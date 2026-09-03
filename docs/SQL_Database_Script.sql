@@ -25,6 +25,8 @@ CREATE TABLE RaceRoutes (
     MapUrl NVARCHAR(255) NULL,
     CONSTRAINT PK_RaceRoutes PRIMARY KEY (RouteId)
 );
+--table 3 events table
+
 CREATE TABLE Events (
     EventId INT IDENTITY(1,1) NOT NULL PRIMARY KEY,
     Name NVARCHAR(100) NOT NULL,
