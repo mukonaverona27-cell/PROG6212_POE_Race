@@ -53,6 +53,10 @@ CREATE TABLE Categories (
     FOREIGN KEY (EventId) REFERENCES Events(EventId) ON DELETE CASCADE,
     CONSTRAINT UQ_Category_PerEvent UNIQUE (EventId, Name)
 );
+-- TABLE 5: Enrolments
+-- PURPOSE: Participant entries — links User → Event → Category
+-- One user can enter multiple events
+
 CREATE TABLE Enrolments (
     EnrolmentId INT IDENTITY(1,1) NOT NULL PRIMARY KEY,
     UserId INT NOT NULL,
