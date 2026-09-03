@@ -83,3 +83,4 @@ CREATE TABLE Results (
     Notes NVARCHAR(255) NULL,
     FOREIGN KEY (EnrolmentId) REFERENCES Enrolments(EnrolmentId) ON DELETE CASCADE
 );
+--before using tables use database
