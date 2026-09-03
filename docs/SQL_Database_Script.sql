@@ -16,7 +16,7 @@ CREATE TABLE Users (--this is user table--
     CONSTRAINT UQ_Users_Email UNIQUE (Email)
 );
 --Table 2 RaceRoutes
-
+--stores route location
 CREATE TABLE RaceRoutes (
     RouteId INT IDENTITY(1,1) NOT NULL,
     RouteName NVARCHAR(50) NOT NULL,
