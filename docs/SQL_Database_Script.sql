@@ -15,6 +15,7 @@ CREATE TABLE Users (--this is user table--
     CONSTRAINT PK_Users PRIMARY KEY (UserId),
     CONSTRAINT UQ_Users_Email UNIQUE (Email)
 );
+
 CREATE TABLE RaceRoutes (
     RouteId INT IDENTITY(1,1) NOT NULL,
     RouteName NVARCHAR(50) NOT NULL,
