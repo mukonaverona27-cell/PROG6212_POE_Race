@@ -1,3 +1,5 @@
+--mukona verona sql script
+
 --creating database--
 CREATE DATABASE RaceDayDb;
 
