@@ -1,4 +1,5 @@
 CREATE DATABASE RaceDayDb;
+--use of database--
 use RaceDayDb;
 --stores all system user--
 --role of user table is organiser creates events participant joins--                           
