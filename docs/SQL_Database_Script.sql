@@ -1,4 +1,6 @@
+--creating database--
 CREATE DATABASE RaceDayDb;
+
 --use of database--
 use RaceDayDb;
 --stores all system user--
