@@ -69,6 +69,10 @@ CREATE TABLE Enrolments (
     FOREIGN KEY (CategoryId) REFERENCES Categories(CategoryId),
     CONSTRAINT UQ_User_Event_Category UNIQUE (UserId, EventId, CategoryId)
 );
+-- TABLE 6: Results
+-- PURPOSE: Final race results
+-- Linked to Enrolments — one result per entry
+
 CREATE TABLE Results (
     ResultId INT IDENTITY(1,1) NOT NULL PRIMARY KEY,
     EnrolmentId INT NOT NULL UNIQUE,
