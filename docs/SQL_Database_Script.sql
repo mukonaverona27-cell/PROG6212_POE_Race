@@ -1,6 +1,6 @@
 CREATE DATABASE RaceDayDb;
 use RaceDayDb;
-CREATE TABLE Users (
+CREATE TABLE Users (--this is user table
     UserId INT IDENTITY(1,1) NOT NULL,
     Email NVARCHAR(100) NOT NULL,
     PasswordHash NVARCHAR(255) NOT NULL,
