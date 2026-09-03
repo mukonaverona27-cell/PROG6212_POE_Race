@@ -40,6 +40,11 @@ CREATE TABLE Events (
     FOREIGN KEY (OrganiserId) REFERENCES Users(UserId) ON DELETE CASCADE,
     FOREIGN KEY (RouteId) REFERENCES RaceRoutes(RouteId) ON DELETE CASCADE
 );
+-- TABLE 4: Categories
+-- PURPOSE: Different race categories per event
+-- Example: 5km, 10km, 21km, Junior, Senior
+-- MUST be BEFORE Enrolments (FK dependency!)
+
 CREATE TABLE Categories (
     CategoryId INT IDENTITY(1,1) NOT NULL PRIMARY KEY,
     Name NVARCHAR(50) NOT NULL,
